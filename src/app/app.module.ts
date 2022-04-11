@@ -22,10 +22,10 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    NameComponent,
     BlueBoxComponent,
     ChatComponent,
+    HomeComponent,
+    NameComponent,
     TaskComponent
   ],
   imports: [
