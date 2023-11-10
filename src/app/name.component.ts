@@ -1,3 +1,4 @@
+import { AsyncPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, map } from 'rxjs';
@@ -6,7 +7,9 @@ import { Observable, map } from 'rxjs';
   template: `
     <h2>Hello {{ name | async }}!</h2>
     <p>I am a sample component.</p>
-  `
+  `,
+  standalone: true,
+  imports: [AsyncPipe]
 })
 export class NameComponent {
   name: Observable<string>;
